@@ -1,0 +1,14 @@
+.projects {
+
+    &-title {
+        margin: 0.5em 0;
+    }
+
+    &-slice {
+        background-color: $light-blue;
+
+        .row {
+            margin-bottom: 0;
+        }
+    }
+}
