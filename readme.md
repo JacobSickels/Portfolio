@@ -1,7 +1,6 @@
-# Git Commands
+# Portfolio
 
-git init - Create a new git repo
-git status - View the changes to your project
-git add - Add files to staging area
-git commit - Creates a new commit with files from the staging area
-git log - View recent commits
+This project was built using React/ Redux/ and Firebase.
+
+####(Coming soon)
+This project will be hosted on my website very soon. http://jacobsickels.com
