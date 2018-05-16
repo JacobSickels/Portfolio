@@ -1,18 +1,38 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const ProjectCard = () => (
-    <div className="col s12 m3">
-        <div className="card">
-            <div className="card-image">
-                <img src="images/favicon.png" />
-                <span className="card-title">Card Title</span>
-                <a className="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div className="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
-        </div>
-    </div>
-);
+export class ProjectCard extends React.Component {
 
-export default ProjectCard;
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className={`col s12 m${this.props.col}`}>
+                <div className="card">
+                    <div className="card-image">
+                        <img src={ this.props.image } />
+                        <span className="card-title">{ this.props.name }</span>
+                        <a className="btn-floating halfway-fab waves-effect waves-light amber">
+                            <i className="material-icons">visibility</i>
+                        </a>
+                    </div>
+                    <div className="card-content">
+                        <p>{ this.props.simple_desc }</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+};
+
+const mapStateToProps = (state, props) => {
+    
+    const found = state.projects.find((entry) => entry.name.toLowerCase() === props.name.toLowerCase());
+
+    return { ...found }
+
+}
+
+export default connect(mapStateToProps)(ProjectCard);

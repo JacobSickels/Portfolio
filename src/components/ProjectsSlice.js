@@ -10,7 +10,8 @@ const ProjectsSlice = () => (
                 </div>
             </div>
             <div className="row">
-                <ProjectCard />
+                <ProjectCard name="cryptotracker" col={4} />
+                <ProjectCard name="simple twitch" col={4} />
             </div>
         </div>
     </div>

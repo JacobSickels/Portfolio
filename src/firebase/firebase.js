@@ -12,6 +12,19 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
-const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, googleAuthProvider, database as default }; 
+const projects = [
+{
+    name: 'Cryptotracker',
+    simple_desc: 'A React/Redux/Firebase application created to track 3 of the top cryptocurrencies.',
+    card_image: './images/crypto-card.png'
+},
+{
+    name: 'Simple Twitch',
+    simple_desc: 'A PHP application created to simplify the Twitch.tv interface and to explore the Twitch API.',
+    card_image: './images/twitch-card.png'
+}
+]
+
+
+export { firebase, database as default }; 

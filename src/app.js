@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { login, logout } from './actions/auth';
+import { startSetProjects } from './actions/projects';
 
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
-import 'react-dates/lib/css/_datepicker.css';
 
-import { firebase } from './firebase/firebase';
 
 const store = configureStore();
 
@@ -19,4 +17,7 @@ const jsx = (
     </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('app'));
+store.dispatch(startSetProjects()).then(() => {
+    ReactDOM.render(jsx, document.getElementById('app'));
+});
+

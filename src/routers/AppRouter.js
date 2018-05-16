@@ -6,6 +6,7 @@ import DashboardPage from '../components/DashboardPage';
 import NotFoundPage from '../components/NotFoundPage';
 import HomePage from '../components/HomePage';
 import ProjectsPage from '../components/ProjectsPage';
+import ContactPage from '../components/ContactPage';
 import PublicRoute from './PublicRoute';
 
 export const history = createHistory();
@@ -23,6 +24,11 @@ const AppRouter = () => (
                 <PublicRoute 
                     path="/projects"
                     component={ProjectsPage}
+                    exact={true}
+                />
+                <PublicRoute 
+                    path="/contact"
+                    component={ContactPage}
                     exact={true}
                 />
                 <Route 

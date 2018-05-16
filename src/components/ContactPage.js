@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPage = () => (
     <div>
-        Home Page Content
+        Contact Page Content
     </div>
 );
 
