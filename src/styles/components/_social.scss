@@ -1,0 +1,24 @@
+.social {
+
+    text-align: center;
+    background-color: $dark-blue;
+    color: white;
+
+    .container {
+        padding-bottom: 0.5em;
+    }
+
+    i {
+        font-size: 2em;
+    }
+
+    img, i {
+        width: 2em;
+        margin-top: 20px;
+    }
+
+    a {
+        color: $yellow;
+    }
+
+}

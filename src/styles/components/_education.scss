@@ -1,0 +1,40 @@
+.education {
+    &-slice {
+        background-color: $dark-blue;
+        background-image: url('/images/carroll-university.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .container {
+            padding-bottom: 2em;
+        }
+
+        .row {
+            margin-bottom: 0;
+        }
+    }
+    &-title {
+        color: $white;
+        margin: 0.5em 0;
+    }    
+
+    &-content {
+        color: $white !important;
+        
+        .content{
+            
+            &--title {
+                color: $white;
+                margin-bottom: 0.25em;
+            }
+            &--minor {
+                color: $yellow;
+            }
+        }
+    }
+
+    &-logo {
+        margin: 3em 0;
+    }
+}

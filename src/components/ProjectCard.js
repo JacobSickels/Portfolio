@@ -12,7 +12,7 @@ export class ProjectCard extends React.Component {
             <div className={`col s12 m${this.props.col}`}>
                 <div className="card">
                     <div className="card-image">
-                        <img src={ this.props.image } />
+                        <img src={ this.props.image } alt={this.props.alt_text} />
                         <span className="card-title">{ this.props.name }</span>
                         <a className="btn-floating halfway-fab waves-effect waves-light amber">
                             <i className="material-icons">visibility</i>

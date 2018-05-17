@@ -10,5 +10,18 @@
         .row {
             margin-bottom: 0;
         }
+
+        .container {
+            padding-bottom: 2em;
+        }
     }
+
+}
+
+.card-title {
+    color: $dark-blue !important;
+}
+
+.btn-floating i {
+    color: $dark-blue;
 }
